@@ -1,11 +1,15 @@
 const textInputRef = document.querySelector('#validation-input');
+const inputLength = Number(textInputRef.dataset.length);
 
-console.dir(textInputRef);
+console.log(inputLength);
+console.log(textInputRef.value.length);
 
 textInputRef.addEventListener('blur', () => {
-  if (textInputRef.length <= 6) {
-    textInputRef.style.borderColor = 'tomato';
+  if (textInputRef.value.length >= inputLength) {
+    textInputRef.classList.add('valid');
+    textInputRef.classList.remove('invalid');
+  } else {
+    textInputRef.classList.add('invalid');
+    textInputRef.classList.remove('valid');
   }
-
-  return (textInputRef.style.borderColor = 'green');
 });
