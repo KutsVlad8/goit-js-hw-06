@@ -15,16 +15,21 @@ inputRef.addEventListener('input', onChangeInput);
 
 function onChangeInput(event) {
   console.dir(event.currentTarget.value);
+  createBoxes(event.currentTarget.value);
 }
 
-createBtn.addEventListener('click', onCreateBoxes);
+// createBtn.addEventListener('click', onCreateBoxes);
 
-function onCreateBoxes() {
-  console.log('Vlad');
+function createBoxes(amount) {
+  console.log(amount);
 }
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+// function destroedBoxes() {
+//   console.log('Vlad');
+// }
+
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215)
+//     .toString(16)
+//     .padStart(6, 0)}`;
+// }

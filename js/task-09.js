@@ -1,4 +1,4 @@
-const bodyRef = document.querySelector('body');
+const bodyRef = document.body;
 const textColorRef = document.querySelector('.color');
 const changeColorBtn = document.querySelector('.change-color');
 

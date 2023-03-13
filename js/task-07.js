@@ -5,7 +5,7 @@ console.dir(sliderRef.value);
 
 console.log(textRef);
 
-const onSlider = event => {
+const onSlider = () => {
   textRef.style.fontSize = sliderRef.value + 'px';
 };
 
