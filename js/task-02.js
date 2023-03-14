@@ -13,6 +13,8 @@ const ingredientsArr = ingredients.map(ingredient => {
   return listItem;
 });
 
+console.log(ingredientsArr);
+
 ingredientsRef.append(...ingredientsArr);
 
 // *  Сокращенный вариант========================================================
