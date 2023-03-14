@@ -4,8 +4,9 @@ const ingredientsRef = document.querySelector('#ingredients');
 
 // console.log(ingredientsRef);
 
+// * ================================================================
 const ingredientsArr = ingredients.map(ingredient => {
-  // console.log(ingredient);
+  console.log(ingredient);
   const listItem = document.createElement('li');
   listItem.classList.add('item');
   listItem.textContent = ingredient;
@@ -13,3 +14,14 @@ const ingredientsArr = ingredients.map(ingredient => {
 });
 
 ingredientsRef.append(...ingredientsArr);
+
+// *  Сокращенный вариант========================================================
+
+// ingredients.map(ingredient => {
+// console.log(ingredient);
+//   const listItem = document.createElement('li');
+//   // listItem.classList.add('item');
+//   listItem.className = 'item';
+//   listItem.textContent = ingredient;
+//   ingredientsRef.appendChild(listItem);
+// });
